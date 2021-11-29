@@ -11,7 +11,7 @@ describe("HezMaticMerge", function () {
   ];
   const iface = new ethers.utils.Interface(ABIbid);
 
-  const swapRatio = 3500; // 3.5 factor
+  const swapRatio = ethers.BigNumber.from(3500); // 3.5 factor
   const duration = 3600; // 1 hour
 
   const hermezTokenName = "Hermez Network Token";
